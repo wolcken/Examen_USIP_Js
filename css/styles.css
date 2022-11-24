@@ -1,7 +1,7 @@
 body, html {
   padding: 10px;
   margin: 0;
-  background: #303030;
+  background: #a5cce2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +11,7 @@ body, html {
 
 .title {
   font-size: 3rem;
-  color: #FFF;
+  color: rgb(29, 16, 212);
   margin-bottom: 50px;
 }
 
@@ -24,7 +24,7 @@ body, html {
   justify-content: space-between;
 }
 label {
-  color: #FFF;
+  color: rgb(64, 53, 218);
   font-size: 1.1rem;
   width: 100px;
 }
@@ -52,7 +52,7 @@ select {
 button {
   padding: 10px;
   width: 100%;
-  background: #1255a8;
+  background: #197a55;
   border: none;
   border-radius: 10px;
   cursor: pointer;
