@@ -1,7 +1,7 @@
 /*
- Author: Diego Adrian<adry.dabp@gmail.com>
+ Author: Alfredo Ramos<alfredoxd00@hotmail.com>
  Final Test: Bases de javascript
- Date: 23/11/2022
+ Date: 24/11/2022
  University: USIP
 */
 
@@ -34,7 +34,7 @@ function moneda(val_introducido, de_i, a_i){
     
     case '3':
       return val_introducido * moneda_cambio[de_i][a_i];
-    
+
     case '4':
       return val_introducido * moneda_cambio[de_i][a_i];
   }
@@ -42,12 +42,18 @@ function moneda(val_introducido, de_i, a_i){
 
 function calcular(){
 
-  var val_introducido = parseInt(document.getElementById('monto').value);
-
+  var val_introducido = document.getElementById('monto').value;
+  
   var de_i = document.getElementById('de').value;
   var a_i = document.getElementById('a').value;
-
-  var resultado = moneda(val_introducido, de_i, a_i);
   
+  var resultado = moneda(val_introducido, de_i, a_i);
+
   return resultado;
 }
+
+const btn2 = document.getElementById('nuevo');
+btn2.addEventListener('click', () => {
+  document.getElementById('monto').value = "";
+  document.getElementById('respuesta').value = "";
+})
